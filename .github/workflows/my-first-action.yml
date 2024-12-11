@@ -14,3 +14,9 @@ jobs:
        run: npm ci
      - name: Run tests
        run: npm test
+  build:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+     - name: Build workflow
+       uses: npm run build
