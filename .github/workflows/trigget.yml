@@ -1,7 +1,7 @@
 name: Push events to Branches
 on: 
  issues:
- - type: opened
+ - types: opened
 jobs:
    show-info:
      runs-on: ubuntu-latest
