@@ -4,8 +4,8 @@ on:
   inputs:
    parm1:
     description: "Test input"
-   type:
-   choice:
+    type: choice
+    options:
      - "Hello World"
      - "Abhishek"
 jobs:
