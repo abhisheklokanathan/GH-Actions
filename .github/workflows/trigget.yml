@@ -1,12 +1,14 @@
 name: Push events to Branches
 on: 
- issues:
-  types: 
-   - opened
+ workflow_dispatch:
+  inputs:
+   parm1:
+    description: "Test input"
+    default: "Hello World"
 jobs:
    show-info:
      runs-on: ubuntu-latest
      steps:
      - name: Test Job
        run: | 
-        echo "Sample Job"
+        echo "Sample Job : ${{github.events.inputs.parm1}}"
