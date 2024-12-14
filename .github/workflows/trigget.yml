@@ -11,4 +11,4 @@ jobs:
      steps:
      - name: Test Job
        run: | 
-        echo "Sample Job : ${{github.events.inputs.parm1}}"
+        echo "Sample Job : ${{github.event.inputs.parm1}}"
