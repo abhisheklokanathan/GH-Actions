@@ -1,0 +1,11 @@
+name: Push events to Branches
+on:
+ push
+
+jobs:
+   show-info:
+     runs-on: ubuntu-latest
+     steps:
+     - name: Test Job
+       run: | 
+        echo "Sample Job"
