@@ -4,9 +4,10 @@ on:
   inputs:
    parm1:
     description: "Test input"
-    options: 
-      - "Hello World"
-      - "Abhishek"
+   type:
+   choice:
+     - "Hello World"
+     - "Abhishek"
 jobs:
    show-info:
      runs-on: ubuntu-latest
